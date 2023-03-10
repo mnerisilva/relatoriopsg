@@ -5,7 +5,7 @@ const _hredArr = window.location.href.split('=');
 const _estado = _hredArr[1];
 console.log(_estado);
 
-const _reportTable = document.querySelector('.report-table body');
+let _reportTable = document.querySelector('.report-table tbody');
 
 
 
@@ -18,8 +18,9 @@ const _reportTable = document.querySelector('.report-table body');
         type: "POST",
         url: "backend/listagem.php",
         data: formData,
-        dataType: "json",
-        encode: true
+        dataType: "html",
+        encode: false
     }).done(function (data) {
-        console.log(data);    
+        console.log(data); 
+        _reportTable.innerHTML = data;   
     }); 

@@ -160,7 +160,7 @@ die();*/
                 <h5 class="card-header">Bordered Table</h5>
                 <div class="card-body">
                   <div class="table-responsive text-nowrap">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered report-table">
                       <thead>
                         <tr>
                           <th>Curso</th>
