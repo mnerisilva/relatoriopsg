@@ -209,10 +209,10 @@ require '../partials/_sessao.php'
                                             <tbody>
                                               <tr>
                                               <td><a href="/modulos/relatorios/psgES.php?estado=es">Espirito Santo</td></a>
-                                              <td><a href="/modulos/relatorios/psgGO.php">Goiás</td></a>
+                                              <td><a href="/modulos/relatorios/psgGO.php?estado=go">Goiás</td></a>
                                               </tr>
                                               <tr>
-                                              <td><a href="/modulos/relatorios/psgMA.php">Maranhão</td></a>
+                                              <td><a href="/modulos/relatorios/psgMA.php?estado=ma">Maranhão</td></a>
                                               <td><a href="/modulos/relatorios/psgMT.php">Mato Grosso</td></a>
                                               </tr>
                                               <tr>
