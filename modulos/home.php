@@ -207,26 +207,39 @@ require '../partials/_sessao.php'
                                         <div class="table-responsive text-nowrap">
                                           <table class="table table-bordered">
                                             <tbody>
+                                              <?php if($_SESSION['privilegio'] == '1'){ ?>
                                               <tr>
                                               <td><a href="/modulos/relatorios/psgES.php?estado=es">Espirito Santo</td></a>
-                                              <td><a href="/modulos/relatorios/psgGO.php">Goiás</td></a>
+                                              <td><a href="/modulos/relatorios/psgGO.php?estado=go">Goiás</td></a>
                                               </tr>
                                               <tr>
-                                              <td><a href="/modulos/relatorios/psgMA.php">Maranhão</td></a>
-                                              <td><a href="/modulos/relatorios/psgMT.php">Mato Grosso</td></a>
+                                              <td><a href="/modulos/relatorios/psgMA.php?estado=ma">Maranhão</td></a>
+                                              <td><a href="/modulos/relatorios/psgMT.php?estado=mt">Mato Grosso</td></a>
                                               </tr>
                                               <tr>
-                                              <td><a href="/modulos/relatorios/psgMS.php">Mato Grosso do Sul</td></a>
-                                              <td><a href="/modulos/relatorios/psgMG.php">Minas Gerais</td></a>
+                                              <td><a href="/modulos/relatorios/psgMS.php?estado=ms">Mato Grosso do Sul</td></a>
+                                              <td><a href="/modulos/relatorios/psgMG.php?estado=mg">Minas Gerais</td></a>
                                               </tr>
                                               <tr>
-                                              <td><a href="/modulos/relatorios/psgPE.php">Pernambuco</td></a>
-                                              <td><a href="/modulos/relatorios/psgRJ.php">Rio de Janeiro</td></a>
+                                              <td><a href="/modulos/relatorios/psgPE.php?estado=pe">Pernambuco</td></a>
+                                              <td><a href="/modulos/relatorios/psgRJ.php?estado=rj">Rio de Janeiro</td></a>
                                               </tr>
                                               <tr>
-                                              <td><a href="/modulos/relatorios/psgSC.php">Santa Catarina</td></a>
-                                              <td><a href="/modulos/relatorios/psgSE.php?estado=sc">Sergipe</td></a>
+                                              <td><a href="/modulos/relatorios/psgSC.php?estado=sc">Santa Catarina</td></a>
+                                              <td><a href="/modulos/relatorios/psgSE.php?estado=se">Sergipe</td></a>
                                               </tr>
+                                              <?php } else { ?>
+                                                <?php if($_SESSION['regiao'] == '9808'){ ?>
+                                                  <tr COLLAPSE="2">
+                                                    <td><a href="/modulos/relatorios/psgSC.php?estado=sc">Santa Catarina</td></a>
+                                                  </tr>
+                                                  <?php } ?>
+                                                <?php if($_SESSION['regiao'] == '9888'){ ?>
+                                                  <tr COLLAPSE="2">
+                                              <td><a href="/modulos/relatorios/psgGO.php?estado=go">Goiás</td></a>
+                                                  </tr>
+                                                  <?php } ?>
+                                              <?php } ?>
                                               </tbody>
                                           </table>
                                         </div>
