@@ -157,7 +157,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/partials/_sessao.php";
                 <h5 class="card-header">Bordered Table</h5>
                 <div class="card-body">
                   <div class="table-responsive text-nowrap">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered report-table">
                       <thead>
                         <tr>
                           <th>Curso</th>
@@ -215,6 +215,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/partials/_sessao.php";
     <!-- Vendors JS -->
     <!-- Main JS -->
     <script src="/assets/js/main.js"></script>
+    <script src="js/script.js"></script>
     <!-- Page JS -->
     <!-- Place this tag in your head or just before your close body tag. -->
       </body>

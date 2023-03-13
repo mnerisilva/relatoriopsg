@@ -9,7 +9,7 @@ let _reportTable = document.querySelector('.report-table tbody');
 
 
 
-
+    console.log()
     let formData = {
         estado: _estado
     }

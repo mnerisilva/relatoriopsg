@@ -16,6 +16,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 session_start();
                 $_SESSION['loggedin'] = true;
                 $_SESSION['username'] = $username;
+                $_SESSION['regiao'] = $row['regiao'];
+                $_SESSION['privilegio'] = $row['privilegio'];
                 header("location: modulos/home.php");
             } 
             else{

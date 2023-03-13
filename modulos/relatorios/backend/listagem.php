@@ -12,7 +12,7 @@ include('../../../partials/_dbconnect.php');
 $estado = $_POST['estado'];
 
 		
-		$sql = "SELECT * FROM relatoriopsg_ WHERE estado = '$estado' ORDER BY curso";
+		$sql = "SELECT * FROM relatoriopsg WHERE estado = '$estado' ORDER BY curso";
 		$result = mysqli_query($conn, $sql);
 
 		
